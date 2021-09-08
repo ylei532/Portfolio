@@ -13,7 +13,7 @@ body{
     background-image: url(../images/Chadwick.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(45%) saturate(70%) contrast(115%) opacity(0.8);
+    filter: brightness(45%) saturate(50%) contrast(115%) opacity(0.9);
 }
 
 #name {
@@ -28,9 +28,54 @@ body{
 #name-inner {
     border: white;
     border-style: solid;
-    border-width: 10px;
+    border-width: 7px;
     padding: 10px 50px;
 }
+
+#name-inner:hover {
+    animation: BorderAnimation 1s linear forwards;
+}
+
+
+@keyframes BorderAnimation {
+    0% {
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    25% {
+       border-top-color:#FFD700;
+       border-left-color: transparent;
+       border-right-color: transparent;
+       border-bottom-color: transparent;
+
+    }
+    50% {
+        border-top-color:#FFD700;
+        border-left-color: transparent;
+        border-right-color:#FFD700;
+        border-bottom-color: transparent;
+ 
+     }
+     75% {
+        border-top-color:#FFD700;
+        border-left-color: transparent;
+        border-right-color:#FFD700;
+        border-bottom-color:#FFD700;
+ 
+     }
+ 
+    100% {
+        border-top-color:#FFD700;
+        border-left-color:#FFD700;
+        border-right-color:#FFD700;
+        border-bottom-color:#FFD700;
+ 
+    }
+}
+
 
 #name h1 {
     color: white;
@@ -42,7 +87,9 @@ body{
 #description {
     width: 100vw;
     height: 50%;
-    background-color: darkgray;
+    color: white;
+    background-color: rgb(39, 39, 39);
+    text-align: center;
     
 }
 

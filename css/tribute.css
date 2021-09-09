@@ -33,7 +33,7 @@ body{
 }
 
 #name-inner:hover {
-    animation: BorderAnimation 1s linear forwards;
+    animation: BorderAnimation 0.4s linear forwards;
 }
 
 
@@ -46,36 +46,35 @@ body{
     }
 
     25% {
-       border-top-color:#FFD700;
+       border-top-color: rgb(65, 62, 62);
        border-left-color: transparent;
        border-right-color: transparent;
        border-bottom-color: transparent;
 
     }
     50% {
-        border-top-color:#FFD700;
+        border-top-color:rgb(65, 62, 62);
         border-left-color: transparent;
-        border-right-color:#FFD700;
+        border-right-color:rgb(65, 62, 62);
         border-bottom-color: transparent;
  
      }
      75% {
-        border-top-color:#FFD700;
+        border-top-color:rgb(65, 62, 62);
         border-left-color: transparent;
-        border-right-color:#FFD700;
-        border-bottom-color:#FFD700;
+        border-right-color:rgb(65, 62, 62);
+        border-bottom-color:rgb(65, 62, 62);
  
      }
  
     100% {
-        border-top-color:#FFD700;
-        border-left-color:#FFD700;
-        border-right-color:#FFD700;
-        border-bottom-color:#FFD700;
+        border-top-color:rgb(65, 62, 62);
+        border-left-color:rgb(65, 62, 62);
+        border-right-color:rgb(65, 62, 62);
+        border-bottom-color:rgb(65, 62, 62);
  
     }
 }
-
 
 #name h1 {
     color: white;
@@ -93,14 +92,19 @@ body{
     
 }
 
-#timeline {
+#awards{
+    color: white;
+    background-color: rgb(39, 39, 39);
     height: auto;
-    width: 100%;
-
+    width: 100vw;
 }
 
 footer {
     background-color: lightblue;
     height: 50px;
     width: 100vw;
+}
+
+video {
+    width: 500px;
 }

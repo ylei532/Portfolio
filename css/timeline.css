@@ -1,0 +1,90 @@
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 60px 0px 20px 0px;
+    justify-content: center;
+    background-color: white;
+}
+
+.vl {
+    border-left: 1px solid gray;
+    height: 150px;
+    margin: 10px auto;
+}
+
+.circle-right {
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0px auto;
+
+}
+
+.circle-right::after {
+    content: "hello";
+    color: white;
+    padding: 10px;
+    height: 125px;
+    width: 400px;
+    background-color: rgb(65, 62, 62);
+    position: relative;
+    left: 45px;
+    bottom: 80px;
+    display: block;
+}
+
+.circle-right::before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: rgb(65, 62, 62);
+    position: relative;
+    display: block;
+    transform: rotate(45deg) scale(0.8);
+    bottom: 12.5px;
+    left:25px
+}
+
+.circle-left {
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0px auto;
+
+}
+
+.circle-left::after {
+    content: "hello";
+    color: white;
+    padding: 10px;
+    height: 125px;
+    width: 400px;
+    background-color: rgb(65, 62, 62);
+    position: relative;
+    right: 448px;
+    bottom: 80px;
+    display: block;
+}
+
+.circle-left::before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: rgb(65, 62, 62);
+    position: relative;
+    display: block;
+    transform: rotate(45deg) scale(0.8);
+    bottom: 12.5px;
+    right:50px
+}
+
+video {
+    position: absolute;
+    margin-left: -550px;
+    margin-top: -80px;
+}

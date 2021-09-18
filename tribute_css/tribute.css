@@ -2,7 +2,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Dosis';
+    overflow-x: hidden;
 }
+
+/**********
+    cover 
+***********/
 
 #intro {
     display: flex;
@@ -15,6 +20,7 @@ body{
     background-image: url(../images/Chadwick.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     filter: brightness(45%) saturate(50%) contrast(115%) opacity(0.9);
 }
 
@@ -84,6 +90,11 @@ body{
     font-weight: bold;
 }
 
+
+/**********
+description 
+***********/
+
 #description {
     width: 100%;
     height: 50%;
@@ -92,6 +103,136 @@ body{
     text-align: center;
     
 }
+
+
+/**********
+  Carousel
+***********/
+
+#slider {
+    overflow: hidden;
+    margin: 20px 10px 20px 10px;
+    height: 755px;
+}
+
+#slider figure {
+    background-color: white;
+    position: relative;
+    width: 400%;
+    animation: 30s slider infinite;
+    margin: 0;
+}
+
+
+#slider figure img:hover{
+    animation: 0.5s enlarge forwards;
+}
+
+
+@keyframes enlarge {
+   
+    0%{
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+#slider figure img {
+    float: left;
+    width: 7.529683%;
+    padding: 0px 30px;
+  
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    7.5% {
+        left: 0;
+    }
+    15% {
+        left: -33.333333%;
+    }
+
+    20% {
+        left: -33.333333%;
+    }
+
+    25% {
+        left: -66.366666%;
+    }
+
+    30% {
+        left: -66.366666%;
+    }
+
+    35% {
+        left: -100%;
+    }
+
+    40% {
+        left: -100%;
+    }
+
+    45% {
+        left: -133.133333%;
+    }
+
+    50% {
+        left: -133.133333%;
+    }
+
+    55% {
+        left: -166.366666%;
+    }
+
+    60% {
+        left: -166.366666%;
+    }
+
+    65% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -233.133333%;
+    }
+
+    80% {
+        left: -233.133333%;
+    }
+
+    85% {
+        left: -266.366666%;
+    }
+
+    90% {
+        left: -266.366666%;
+    }
+
+    95% {
+        left: -299.6%;
+    }
+
+    100% {
+        left: -299.6%;
+    }
+
+}
+
+/**********
+awards section
+***********/
 
 #awards {
     color: white;
@@ -109,19 +250,25 @@ body{
 #awards .heading {
     grid-column: 1/3;
     justify-self: center;
+    position: relative;
+    right: 50px;
 }
 
 .title {
     position: relative;
-    left: 50%;
+    left: 55%;
 }
 
 .award {
     position: relative;
-    left: 20%;
+    left: 22.5%;
 }
 
-
+.trophy {
+    position: absolute;
+    left: -100px;
+    bottom: -25px;
+}
 
 footer {
     margin: 0;
@@ -130,8 +277,3 @@ footer {
     width: 100%;
 }
 
-.trophy {
-    position: absolute;
-    left: -100px;
-    bottom: -25px;
-}

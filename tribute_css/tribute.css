@@ -6,6 +6,40 @@ body{
 }
 
 /**********
+  nav button
+***********/
+
+
+nav{
+    align-self: end;
+    position: absolute;
+    margin: 20px 50px;
+}
+
+nav a {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/**********
     cover 
 ***********/
 
@@ -26,69 +60,37 @@ body{
 
 #name {
     position: absolute;
-    width: 100%;
     height: 100vh;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
-
-#name-inner {
-    border: white;
-    border-style: solid;
-    border-width: 7px;
-    padding: 10px 50px;
-}
-
-#name-inner:hover {
-    animation: BorderAnimation 0.4s linear forwards;
-}
-
-
-@keyframes BorderAnimation {
-    0% {
-        border-top-color: transparent;
-        border-left-color: transparent;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
-    }
-
-    25% {
-       border-top-color: rgb(65, 62, 62);
-       border-left-color: transparent;
-       border-right-color: transparent;
-       border-bottom-color: transparent;
-
-    }
-    50% {
-        border-top-color:rgb(65, 62, 62);
-        border-left-color: transparent;
-        border-right-color:rgb(65, 62, 62);
-        border-bottom-color: transparent;
- 
-     }
-     75% {
-        border-top-color:rgb(65, 62, 62);
-        border-left-color: transparent;
-        border-right-color:rgb(65, 62, 62);
-        border-bottom-color:rgb(65, 62, 62);
- 
-     }
- 
-    100% {
-        border-top-color:rgb(65, 62, 62);
-        border-left-color:rgb(65, 62, 62);
-        border-right-color:rgb(65, 62, 62);
-        border-bottom-color:rgb(65, 62, 62);
- 
-    }
-}
-
 #name h1 {
     color: white;
     font-size: 60px;
     font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
 }
+
+
+#name h1::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 7.5px;
+    width: 0;
+    left: 30.85%;
+    bottom: 43%;
+    transition: 0.3s;
+}
+
+#name h1:hover:after {
+    width: 38.5%;
+}
+
+
 
 
 /**********
@@ -96,11 +98,13 @@ description
 ***********/
 
 #description {
-    width: 100%;
-    height: 50%;
-    color: white;
-    background-color: rgb(39, 39, 39);
-    text-align: center;
+    
+    height: auto;
+    color: black;
+    background-color: lightgray;
+    text-align: justify;
+    padding: 40px 200px;
+    font-size: 20px;
     
 }
 
@@ -153,79 +157,79 @@ description
         left: 0;
     }
 
-    7.5% {
+    2.5% {
         left: 0;
     }
-    15% {
+    8.5% {
         left: -33.333333%;
     }
 
-    20% {
+    13.5% {
         left: -33.333333%;
     }
 
-    25% {
+    19.5% {
         left: -66.366666%;
     }
 
-    30% {
+    24.5% {
         left: -66.366666%;
     }
 
-    35% {
+    30.5% {
         left: -100%;
     }
 
-    40% {
+    35.5% {
         left: -100%;
     }
 
-    45% {
+    41.5% {
         left: -133.133333%;
     }
 
-    50% {
+    46.5% {
         left: -133.133333%;
     }
 
-    55% {
+    52.5% {
         left: -166.366666%;
     }
 
-    60% {
+    57.5% {
         left: -166.366666%;
     }
 
-    65% {
+    63.5% {
         left: -200%;
     }
 
-    70% {
+    69.5% {
         left: -200%;
     }
 
-    75% {
+    75.5% {
         left: -233.133333%;
     }
 
-    80% {
+    80.5% {
         left: -233.133333%;
     }
 
-    85% {
+    86.5% {
         left: -266.366666%;
     }
 
-    90% {
+    91.5% {
         left: -266.366666%;
     }
 
-    95% {
-        left: -299.6%;
+    97.5% {
+        left: -299.68%;
     }
 
     100% {
-        left: -299.6%;
+        left: -299.68%;
     }
 
 }

@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: 'Dosis';
     overflow-x: hidden;
+  
 }
 
 /**********
@@ -87,7 +88,7 @@ nav a:hover::after {
 }
 
 #name h1:hover:after {
-    width: 38.5%;
+    width: 735px;
 }
 
 
@@ -238,40 +239,54 @@ description
 awards section
 ***********/
 
-#awards {
-    color: white;
-    background: linear-gradient(135deg, black, rgb(39, 39, 39), rgb(109, 105, 105));
-    display: grid;
+#awards_section {
+    color: black;
+
     font-size: 30px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 90px auto auto auto auto;
-    justify-items: start;
-    align-items: start;
-    grid-gap: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
+    width: 100%;
+    height: 690px;
+
 }
 
-#awards .heading {
-    grid-column: 1/3;
-    justify-self: center;
-    position: relative;
-    right: 50px;
+.awards{
+    float:left;
+    width: 33.33%;
+    text-align: center;
+    
+    
+    /* border-style: solid;
+    border-color: gold;
+    border-width: 5px; */
 }
 
-.title {
-    position: relative;
-    left: 55%;
-}
-
-.award {
-    position: relative;
-    left: 22.5%;
-}
-
-.trophy {
+/* #awards_section .trophy {
     position: absolute;
-    left: -100px;
-    bottom: -25px;
+    width: 40%;
+    right: 100px;
+
+} */
+
+#awards_section .trophy {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#awards_section .trophy_image {
+    width:20%;
+        
+    border-bottom-style: solid;
+    border-color: darkgray;
+    border-width: 2.5px;
+    padding: 10px 0 25px 0;
+}
+
+.awards p {
+    font-size: 20px;
+    font-style: italic;
 }
 
 footer {

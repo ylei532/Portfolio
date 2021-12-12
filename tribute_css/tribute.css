@@ -240,8 +240,6 @@ awards section
 ***********/
 
 #awards_section {
-    color: black;
-
     font-size: 30px;
     padding-bottom: 120px;
     width: 100%;
@@ -253,19 +251,8 @@ awards section
     float:left;
     width: 33.33%;
     text-align: center;
-    
-    
-    /* border-style: solid;
-    border-color: gold;
-    border-width: 5px; */
 }
 
-/* #awards_section .trophy {
-    position: absolute;
-    width: 40%;
-    right: 100px;
-
-} */
 
 #awards_section .trophy {
     width: 100%;

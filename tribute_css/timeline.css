@@ -4,10 +4,8 @@ skeleton
 ******/
 
 #timeline {
-    position: relative;
     display: flex;
     flex-direction: column;
-    height: auto;
     width: 100vw;
     padding: 60px 0px 20px 0px;
     justify-content: center;
@@ -18,10 +16,6 @@ skeleton
     border-left: 1px solid gray;
     height: 150px;
     margin: 10px auto;
-}
-
-#timeline p {
-    position: absolute;
 }
 
 
@@ -48,7 +42,6 @@ right box
 .circle-right::after {
     content: "";
     box-shadow: 10px 20px 5px 2px lightgray;
-    color: white;
     padding: 10px;
     height: 140px;
     width: 400px;
